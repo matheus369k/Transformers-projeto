@@ -14,11 +14,9 @@ body{
 }
 
 header{
-    height: 80vh;
-    border-radius: 0 0 20px 20px;
+    height: 50vh;
     background: url('../imagens/banner.jpg') top center no-repeat fixed;
     background-size: cover;
-    box-shadow: 2px 5px 50px 2px rgba(0, 0, 0, 0.437);
 }
 
 
@@ -116,10 +114,27 @@ p{
     margin: auto;
 }
 
+a{
+    text-decoration: none;
+    color: rgb(7, 7, 88);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+a:hover{
+    color: rgb(62, 62, 222);
+    text-decoration: underline;
+}
+
+
 footer{
     text-align: center;
-    font-size: 1vw;
+    font-size: 1.5vw;
     background-color: black;
     padding: 1vw;
+    color: white;
+}
+
+.dev{
     color: white;
 }
