@@ -4,7 +4,7 @@
 
 ![2023-08-18-122554_1024x600_scrot](https://github.com/matheus369k/Transformers-projeto/assets/47065962/28e3492e-ab78-4c5c-9d32-fcd5cb306a4f)</div>
 
-__*Nota*_ : *O desenvolvimento do projeeto foi pensado em trazer irformaçāo sobre o filme, que na epoca nāo havia sido lançado, sendo um fā da obra Transformers, resolvi criar esse site.*
+__*Nota*_ : *O desenvolvimento do projeto foi pensado em trazer informaçāo sobre o filme, que na epoca nāo havia sido lançado, sendo um fā da obra Transformers, resolvi criar esse site.*
 ***
 ## 🚀Começando
 - [Linguagens utilizadaas](#linguagens-utilizadaas)
@@ -28,7 +28,7 @@ para adicionar o vidio do Youtube foi utilizado a tag ```<iframe></iframe>```, v
 
 ![2023-08-18-130438_1024x600_scrot](https://github.com/matheus369k/Transformers-projeto/assets/47065962/7fd18ac6-0999-4dae-be08-313a0ecc45db)</div>
 #### __*CSS*__
-Para deixar o conteudo o maximo resposivo sem ultilizar o Media Query nāo foi ultilizado uma medida 'fixa', mas uma medida adaptaver sendo ela a __vw__. E na parte do video foi usado o codigo abaixo para deixalo "responsivo".
+Para deixar o conteudo o maximo resposivo sem utilizar o Media Query nāo foi utilizado uma medida 'fixa', mas uma adaptavel sendo ela a __vw__. Na parte do video foi usado o codigo abaixo para deixa-lo "responsivo".
 <div align="center">
  
  ![2023-08-18-130357_1024x600_scrot](https://github.com/matheus369k/Transformers-projeto/assets/47065962/383a1f61-a7ff-43a7-a156-5e85b1761797)</div>
