@@ -1,140 +1,118 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sometype Mono", monospace;
 }
 
-
-html,
-body{
-    background-color: white;
-    width: auto;
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+body .container_social_midia {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+body .container_social_midia .container_social_midia_list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+body .container_social_midia .container_social_midia_list i {
+  font-size: 2em;
+  cursor: pointer;
+}
+body .container_social_midia .container_social_midia_list_github i {
+  color: white;
+}
+body .container_social_midia .container_social_midia_list_linkedin i {
+  color: blue;
+}
+body .container_social_midia .container_social_midia_list i:hover {
+  transform: scale(1.2);
+}
+body .container_Information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-height: 100%;
+  width: 100%;
+  gap: 20px;
+}
+body .container_Information_title_h1 {
+  font-size: 2em;
+  color: white;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+body .container_Information_title_h2 {
+  font-size: 1.6em;
+  color: white;
+}
+body .container_Information_text {
+  width: 80%;
+  color: white;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 1em;
+  margin-top: 20px;
+  text-transform: capitalize;
+  text-align: center;
+}
+body .container_Information_text a {
+  color: gray;
+  text-decoration: none;
+}
+body #container_2 {
+  display: none;
+}
+body #container_3 {
+  display: none;
+}
+body #container_4 {
+  display: none;
+}
+body #container_5 {
+  display: none;
+}
+body #container_1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/transformers-imagem.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body .container_navbar {
+  width: 20%;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+}
+body .container_navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .container_navbar ul .active {
+  background-color: white;
+  transform: scale(1.2);
+}
+body .container_navbar ul li {
+  cursor: pointer;
+  padding: 10px;
+  background-color: gray;
+  border-radius: 50%;
 }
 
-header{
-    height: 50vh;
-    background: url('../imagens/banner.jpg') top center no-repeat fixed;
-    background-size: cover;
-}
-
-
-h1{
-    padding: 3vw 0vw;
-    font-size: 5vw;
-    text-align: center;
-}
-
-h2{
-    padding: 2vw 0;
-    font-size: 3vw;
-}
-
-#principal{
-    background-color: white;
-    padding: 5vw 2vw 0vw 2vw;
-}
-
-
-p{
-    padding:4vw 0;
-    line-height: 4.8vw;
-    text-align: justify;
-    font-size: 2vw;
-    font-weight: 700;
-}
-
-
-.titulo{
-    font-size: 4vw;
-    text-align: center;
-}
-
-#capa{
-    width: 20vw;
-    margin:1.5vw 3vw ;
-}
-
-.titulo-esquerda{
-    text-align: left;
-}
-
-.imagem-esquerda{
-    margin: 0.9vw;
-    padding-top: 4vw;
-    display: inline;
-    float:left;
-}
-
-.titulo-direita{
-    text-align: right;
-}
-
-.imagem-direita{
-    padding-top: 4.5vw;
-    margin: 0.9vw ;
-    display: inline;
-    float: right;
-}
-
-.transformers-imagem{
-    display: block;
-    margin: auto;
-    width: 87vw;
-}
-
-.imagens{
-    width: 28vw;
-}
-
-#secundario{
-    background-color: black;
-}
-
-.tela{
-    border: 5px solid;
-    position: relative;
-    padding-bottom: 60%;
-    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.359);
-
-}
-
-.video{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-.transformers-cartas{
-    background-color: black;
-   
-    width: 100%;
-    display: block;
-    margin: auto;
-}
-
-a{
-    text-decoration: none;
-    color: rgb(7, 7, 88);
-    font-weight: 900;
-    cursor: pointer;
-}
-
-a:hover{
-    color: rgb(62, 62, 222);
-    text-decoration: underline;
-}
-
-
-footer{
-    text-align: center;
-    font-size: 1.5vw;
-    background-color: black;
-    padding: 1vw;
-    color: white;
-}
-
-.dev{
-    color: white;
-}
+/*# sourceMappingURL=style.css.map */
