@@ -3,36 +3,6 @@ const containes = document.querySelectorAll('.container_Information')
 const navlist = document.getElementById('container_navbar_list')
 
 navlist.childNodes.forEach((nav, index) => {
-
-    document.body.addEventListener("touchmove", ()=> {
-
-        switch (index) {
-
-            case 1:
-
-                var navtouch = navlist[1]
-
-                break
-
-            case 3:
-
-                var navtouch = navlist[3]
-
-                break
-
-            case 5:
-
-                var navtouch = navlist[5]
-
-                break
-        }
-
-        SwitchPage(index, navtouch)
-
-        return
-    })
-
-
     nav.addEventListener('click', () => {
 
         SwitchPage(index, nav)
