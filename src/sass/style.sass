@@ -19,14 +19,35 @@ body
         right: 20px
         top: 20px
 
+        @include mixins.tablet
+            width: 100%
+            height: 100px
+            top: 0px
+            backdrop-filter: blur(10px)
+            border-bottom: 1px solid gray
+            right: 0px
+
         .container_social_midia_list
             display: flex
             gap: 40px
             list-style: none
 
+            @include mixins.tablet
+                align-items: center
+                justify-content: right
+                margin-right: 20px
+                height: 100%
+
+            @include mixins.mobile
+                gap: 20px
+
+
             i 
                 font-size: 2em
                 cursor: pointer
+
+                @include mixins.mobile
+                    font-size: 1.5em
 
 
             &_github i
@@ -37,6 +58,7 @@ body
 
             
             i:hover
+                transition: variables.$animation-transition
                 transform: scale(1.2) 
 
     .container_Information.container_Active
@@ -45,22 +67,57 @@ body
         gap: 20px
         padding: 0px 10%
 
+        @include mixins.tablet
+            padding: 150px 10% 0px 10%
+
+        @include mixins.big-mobile
+            padding: 150px 5% 0px 5%
+
+        @include mixins.mobile
+            padding: 150px 2% 0px 2%
+
         .container_Information_title_h1
+            @include mixins.title-border
             margin-bottom: 50px
-            font-size: 1.8em
+            padding: 0px 5px
             color: white
+            font-size: 1.8em
+            letter-spacing: 1px
             text-transform: uppercase
+            text-align: center
+
+            @include mixins.big-mobile
+                font-size: 1.3em
+
+            @include mixins.mobile
+                font-size: .9em
+                padding: 0px 2px
         
         .container_Information_title_h2
+            @include mixins.title-border
             font-size: 1.6em
-            text-transform: capitalize
+            text-transform: uppercase
+            letter-spacing: 2px
+            padding: 0px 5px
             color: white
+
+            @include mixins.big-mobile
+                font-size: 1.2em
+
+            @include mixins.mobile
+                font-size: .8em
 
         .container_Information_title_h3
             text-transform: capitalize
             align-self: start
             font-size: 1.4em
             color: white
+
+            @include mixins.big-mobile
+                font-size: 1em
+
+            @include mixins.mobile
+                font-size: .7em
 
 
         .container_Information_text
@@ -71,9 +128,15 @@ body
             text-align: justify
             text-indent: 35px
             margin-bottom: 50px
+            transition: variables.$animation-transition
+
+            @include mixins.mobile
+                font-size: .9em
+                line-height: 24px
+                margin-bottom: 25px
 
             a
-                color: gray
+                color: blue
                 text-decoration: none
 
         .container_information_slide
@@ -84,10 +147,19 @@ body
             height: 380px
             width: 400px
 
+            @include mixins.tablet
+                align-self: center
+                margin-bottom: 20px
+
+            @include mixins.mobile
+                height: 320px
+                width: 330px
+
             &_img
-                border: 10px double gray
+                border: 10px double rgba(9, 56, 167, 0.323)
                 height: 100%
                 width: auto
+                transition: variables.$animation-transition
 
             &_list
                 height: 100%
@@ -104,15 +176,19 @@ body
                     width: auto
                     height: 18%
 
+                    @include mixins.mobile
+                        height: 17%
+
                 img
                     width: 100%
                     height: 100%
+                    transition: variables.$animation-transition
 
                 &_img_selected
-                    border: 2px double white
+                    border: 2px double rgb(9, 56, 167)
 
                 li:hover
-                    border: 2px double gray
+                    border: 2px double rgba(9, 56, 167, 0.323)
                     transition: .7s
 
 
@@ -123,7 +199,18 @@ body
             align-self: end
             position: absolute
             top: 45vh
-            border: 20px double gray
+            border: 20px double rgba(9, 56, 167, 0.323)
+            transition: variables.$animation-transition
+
+            @include mixins.tablet
+                position: relative
+                align-self: center
+                top: auto
+
+            @include mixins.big-mobile
+                width: 98vw
+                height: 58vw
+                border: 10px double rgba(9, 56, 167, 0.323)
     
     .container_Information
         display: none
@@ -140,10 +227,14 @@ body
     .container_navbar
         width: 40px
         height: 200px
-        position: absolute
+        position: fixed
         left: 2%
         transform: translateY(-50%)
         top: 50%
+
+        @include mixins.tablet
+            top: 50px
+
 
         ul
             list-style: none
@@ -151,6 +242,13 @@ body
             flex-direction: column
             justify-content: space-between
             height: 100%
+
+            @include mixins.tablet
+                flex-direction: row
+                width: 200px
+            
+            @include mixins.mobile
+                width: 120px
 
             .active 
                 background-color: white
@@ -161,5 +259,9 @@ body
                 padding: 10px
                 background-color: gray
                 border-radius: 50%
+
+                &:hover
+                    background-color: white
+                
 
             
