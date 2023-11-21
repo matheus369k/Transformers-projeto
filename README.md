@@ -1,37 +1,14 @@
 # 💻Transformers projeto
-
 <div align="center">
 
-![2023-08-18-122554_1024x600_scrot](https://github.com/matheus369k/Transformers-projeto/assets/47065962/28e3492e-ab78-4c5c-9d32-fcd5cb306a4f)</div>
+![transformers](https://github.com/matheus369k/Transformers-projeto/assets/47065962/e7cba3c8-a6dc-4928-a381-035c8ca78aa8)</div>
 
-__*Nota*_ : *O desenvolvimento do projeto foi pensado em trazer informaçāo sobre o filme, que na epoca nāo havia sido lançado, sendo um fā da obra Transformers, resolvi criar esse site.*
-***
-## 🚀Começando
-- [Linguagens utilizadaas](#linguagens-utilizadaas)
-- [Codigo](#codigo)
-   - [HTML5](#html5)
-   - [CSS](#css)
-- [Licença](#licença)
-
-***
-### 📋Linguagens utilizadaas
+__Nota__: O Projeto e um site que tem como objetivo informar o cliente sobre o 🎥filme __Transformers: O desperta das feras__. o projeto teve como intuito o aprimoramento das habilidades com o sass.
+## 🧰Ferramentas
 - HTML5
-- CSS
-***
-### 🧰Codigo
-#### __*HTML5*__
-<div align="center">
- 
-![2023-08-18-130759_1024x600_scrot](https://github.com/matheus369k/Transformers-projeto/assets/47065962/3bd4fafc-e1d3-4638-ba1a-a1a44a03f4c9)</div>
-para adicionar o vidio do Youtube foi utilizado a tag ```<iframe></iframe>```, veja o codigo abaixo👇...
-<div  align="centerr">
-
-![2023-08-18-130438_1024x600_scrot](https://github.com/matheus369k/Transformers-projeto/assets/47065962/7fd18ac6-0999-4dae-be08-313a0ecc45db)</div>
-#### __*CSS*__
-Para deixar o conteudo o maximo resposivo sem utilizar o Media Query nāo foi utilizado uma medida 'fixa', mas uma adaptavel sendo ela a __vw__. Na parte do video foi usado o codigo abaixo para deixa-lo "responsivo".
-<div align="center">
- 
- ![2023-08-18-130357_1024x600_scrot](https://github.com/matheus369k/Transformers-projeto/assets/47065962/383a1f61-a7ff-43a7-a156-5e85b1761797)</div>
- ***
- ## 📃Licença
+- Sass
+- JavaScript
+## ⚙️Desenvolvimento
+O projeto foi desenvolvido utiliza sass como ferramenta de estilização padrão, sendo um site responsivo utilizando media querys. Fora utilizado, detecções de cliques com o AddEventListen(...) para detectar as interações do usuario com o site tambem fora ultizado um temporizador setInterval(...) para chamar uma função reponsavel pela troca da imagem a mostar a cada 8s.
+## 📃Licença
  Licença aderida foi (MIT) - veja [Licença](LICENSE)
